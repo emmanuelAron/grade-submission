@@ -11,8 +11,8 @@ Le formulaire form.html et grades.html<br />
 
 Le formulaire grades.html est visible sur l'URL http://localhost:8081/grades car on a @GetMapping("/grades") <br />
 -> Dans le GradeController : <br />
-- Une liste d'objets Grade studentGrades est passé en attribut au Modele.<br /> 
-- Cette liste d'objets correspond aux lignes du formulaire ajoutées dynamiquement<br />
+- Une liste d'objets Grade studentGrades est passé en attribut au Modele.Cette liste d'objet Grade étant une variable globale de GradeController qui est initialement vide <br /> 
+- Cette liste d'objets correspond aux lignes du formulaire ajoutées dynamiquement : Le principe est de rajouter des lignes du formulaire en html lorsque la liste d'objets se peuple...<br />
 Le formulaire form.html est visible sur l'URL http://localhost:8081 car on a @GetMapping("/")<br />
 -> Dans le GradeController :<br />
   Un objet Grade est passé en attribut au Modele.<br />
